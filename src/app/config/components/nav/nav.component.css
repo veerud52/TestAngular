@@ -1,0 +1,16 @@
+.mat-sidenav {
+  width: 360px;
+}
+.mat-sidenav-container {
+  background-color: white !important;
+  height: 100vh;
+}
+.sidenav-toolbar {
+  height: 64px;
+  background-color: mat-color(primary);
+  display: flex;
+  flex-direction: row;
+}
+.mat-nav-list {
+  padding-top: 0;
+}

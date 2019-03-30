@@ -1,0 +1,11 @@
+ <app-tool-bar  class="fixed-topnav" fxHide.gt-xs></app-tool-bar> 
+<mat-sidenav-container fullscreen >
+  <mat-sidenav #appDrawer mode="push" opened="false" class="sidenav"> 
+    <mat-nav-list>
+      <app-menu-list-item *ngFor="let item of navItems" [item]="item"></app-menu-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <app-tool-bar fxHide.xs></app-tool-bar>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+<span class="version-info">Current build: {{version.full ? version.full : version}}</span>
